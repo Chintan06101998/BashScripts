@@ -3,6 +3,8 @@
 echo "Welcome $USER on $HOSTNAME."
 echo "###############################################"
 
+#TODO: Both example of command substitution
+
 FREERAM=$(free -m | grep Mem | awk '{print $4}')
 LOAD= `uptime | awk '{print $9}'`
 ROOTFREE=$(df -h | grep 'dev/nvme0n1p1' | awk '{print $4}')
